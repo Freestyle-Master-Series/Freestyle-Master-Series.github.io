@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Votación Freestyle</title>
     <style>
-        /* Estilos CSS ... */
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(to right, #FFD600, #000);
@@ -18,9 +16,10 @@
             align-items: center;
             justify-content: center;
             min-height: 100vh;
+            flex-direction: column;
         }
 
-        .container {
+        .header {
             text-align: center;
             background-color: rgba(0, 0, 0, 0.9);
             padding: 20px;
@@ -30,6 +29,7 @@
             z-index: 1;
             animation: fadeIn 1s ease-in-out;
             max-width: 80%;
+            margin-bottom: 20px;
         }
 
         @keyframes fadeIn {
@@ -42,6 +42,18 @@
                 opacity: 1;
                 transform: translateY(0);
             }
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease-in-out;
+            max-width: 80%;
         }
 
         h1 {
@@ -81,55 +93,17 @@
         }
 
         .freestyler h2 {
-            font-size: 1.5em;
+            font-size: 1.2em;
             margin-bottom: 10px;
         }
 
         .votar-btn {
-            padding: 15px 30px;
+            padding: 12px 24px;
             font-size: 1em;
             background-color: #FFD600;
             color: #000;
             border: none;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-            animation: fadeInBtn 1s 1s ease-in-out;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            margin-top: 20px;
-        }
-
-        .votar-btn:hover {
-            background-color: #C49000;
-            transform: scale(1.05);
-        }
-
-        @keyframes fadeInBtn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
-    <!-- Agrega tu CSS aquí -->
-    <style>
-        /* Tus estilos existentes ... */
-
-        .votar-btn {
-            /* ... Tus estilos existentes ... */
-            padding: 15px 30px;
-            font-size: 1em;
-            background-color: #FFD600;
-            color: #000;
-            border: none;
-            border-radius: 25px;
+            border-radius: 20px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
             animation: fadeInBtn 1s 1s ease-in-out;
@@ -159,6 +133,9 @@
 </head>
 
 <body>
+    <div class="header">
+        <h1>Vota por tu freestyler favorito!</h1>
+    </div>
 
     <div class="container">
         <div class="freestyler">
@@ -191,16 +168,16 @@
             <button onclick="votar('Blon')" class="votar-btn">Votar</button>
         </div>
 
-        <button class="votar-btn" onclick="votar('Mejor Freestyler')">Votar ahora por tu freestyler favorito</button>
+        <button class="votar-btn" onclick="votar('Mejor Freestyler')">Votar por el Mejor Freestyler</button>
     </div>
 
     <script>
         function votar(freestyler) {
-            // Agrega código adicional aquí si es necesario
-            window.location.href = "gracias_por_votar"; // Cambia la URL según tu estructura de carpetas y archivos
+            // Elimina la línea de alerta si no quieres mensajes
+            // alert('Has votado por ' + freestyler);
+            // Agrega código adicional
         }
     </script>
-
 </body>
 
 </html>
