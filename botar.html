@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votación Freestyle</title>
+    <style>
+        /* Estilos CSS ... */
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #FFD600, #000);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease-in-out;
+            max-width: 80%;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #FFD600;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                margin-top: -20px;
+                opacity: 0;
+            }
+
+            to {
+                margin-top: 0;
+                opacity: 1;
+            }
+        }
+
+        .freestyler {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .freestyler img {
+            max-width: 100%;
+            height: auto;
+            max-height: 150px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .freestyler:hover img {
+            transform: scale(1.1);
+        }
+
+        .freestyler h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .votar-btn {
+            padding: 15px 30px;
+            font-size: 1em;
+            background-color: #FFD600;
+            color: #000;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            animation: fadeInBtn 1s 1s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            margin-top: 20px;
+        }
+
+        .votar-btn:hover {
+            background-color: #C49000;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInBtn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <!-- Agrega tu CSS aquí -->
+    <style>
+        /* Tus estilos existentes ... */
+
+        .votar-btn {
+            /* ... Tus estilos existentes ... */
+            padding: 15px 30px;
+            font-size: 1em;
+            background-color: #FFD600;
+            color: #000;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            animation: fadeInBtn 1s 1s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            margin-top: 20px;
+        }
+
+        .votar-btn:hover {
+            background-color: #C49000;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInBtn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="freestyler">
+            <img src="letra.jpg" alt="Letra">
+            <h2>Letra</h2>
+            <button onclick="votar('Letra')" class="votar-btn">Votar</button>
+        </div>
+
+        <div class="freestyler">
+            <img src="chuty.jpg" alt="Chuty">
+            <h2>Chuty</h2>
+            <button onclick="votar('Chuty')" class="votar-btn">Votar</button>
+        </div>
+
+        <div class="freestyler">
+            <img src="stuart.jpg" alt="Stuart">
+            <h2>Stuart</h2>
+            <button onclick="votar('Stuart')" class="votar-btn">Votar</button>
+        </div>
+
+        <div class="freestyler">
+            <img src="nacho.jpg" alt="Nacho">
+            <h2>Nacho</h2>
+            <button onclick="votar('Nacho')" class="votar-btn">Votar</button>
+        </div>
+
+        <div class="freestyler">
+            <img src="blon.jpg" alt="Blon">
+            <h2>Blon</h2>
+            <button onclick="votar('Blon')" class="votar-btn">Votar</button>
+        </div>
+
+        <button class="votar-btn" onclick="votar('Mejor Freestyler')">Votar ahora por tu freestyler favorito</button>
+    </div>
+
+    <script>
+        function votar(freestyler) {
+            // Agrega código adicional aquí si es necesario
+            window.location.href = "gracias_por_votar"; // Cambia la URL según tu estructura de carpetas y archivos
+        }
+    </script>
+
+</body>
+
+</html>
