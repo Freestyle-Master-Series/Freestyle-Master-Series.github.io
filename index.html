@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freestyle Master Series</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #000, #FFD600);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease-in-out;
+            max-width: 80%; /* Nuevo: limita el ancho del contenedor */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #FFD600;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from { margin-top: -20px; opacity: 0; }
+            to { margin-top: 0; opacity: 1; }
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            animation: fadeIn 1s 0.5s ease-in-out;
+        }
+
+        button {
+            padding: 12px 24px;
+            font-size: 1em;
+            background-color: #FFD600;
+            color: #000;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: fadeInBtn 1s 1s ease-in-out;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        button:hover {
+            background-color: #C49000;
+        }
+
+        @keyframes fadeInBtn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .decoration {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #FFD600;
+            border-radius: 50%;
+            animation: rotate 8s linear infinite, fadeIn 1s ease-in-out;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .decoration:nth-child(1) {
+            top: 5%;
+            left: 10%;
+        }
+
+        .decoration:nth-child(2) {
+            top: 25%;
+            left: 80%;
+            animation-duration: 6s;
+        }
+
+        .decoration:nth-child(3) {
+            top: 60%;
+            left: 50%;
+            animation-duration: 10s;
+        }
+
+        .decoration:nth-child(4) {
+            top: 80%;
+            left: 20%;
+            animation-duration: 8s;
+        }
+
+        .decoration:nth-child(5) {
+            top: 40%;
+            left: 40%;
+            animation-duration: 12s;
+        }
+
+        .decoration:nth-child(6) {
+            top: 90%;
+            left: 80%;
+            animation-duration: 10s;
+        }
+
+        .logo-img {
+            max-width: 100%;
+            height: auto;
+            max-height: 120px; /* Ajusta este valor según sea necesario */
+            margin-bottom: -20px; /* Ajusta este valor para que la imagen sobresalga */
+        }
+
+        /* Nuevo: Estilos para dispositivos móviles */
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="background">
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+    <div class="decoration"></div>
+</div>
+
+<div class="container">
+    <img class="logo-img" src="freetyle master series.png" alt="Logo Freestyle Master Series">
+    <h1>Freestyle Master Series</h1>
+    <p>Vota por el maestro del Freestyle de este año 2023.<br> de la Freestyle Master Series</p>
+    <button onclick="iniciarEncuesta()">¡Vóta por el mejor!</button>
+</div>
+
+<script>
+    function iniciarEncuesta() {
+        var urlEncuesta = 'https://facebook.com';
+        window.location.href = urlEncuesta;
+    }
+</script>
+
+</body>
+</html>
