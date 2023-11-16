@@ -22,20 +22,20 @@
         .header {
             text-align: center;
             background-color: rgba(0, 0, 0, 0.9);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
             position: relative;
             z-index: 1;
             animation: fadeIn 1s ease-in-out;
             max-width: 80%;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         @keyframes fadeIn {
             from {
                 opacity: 0;
-                transform: translateY(-20px);
+                transform: translateY(-10px);
             }
 
             to {
@@ -47,9 +47,9 @@
         .container {
             text-align: center;
             background-color: rgba(0, 0, 0, 0.9);
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
             position: relative;
             z-index: 1;
             animation: fadeIn 1s ease-in-out;
@@ -58,14 +58,14 @@
 
         h1 {
             color: #FFD600;
-            font-size: 2.5em;
-            margin-bottom: 15px;
+            font-size: 1.5em;
+            margin-bottom: 10px;
             animation: slideIn 1s ease-in-out;
         }
 
         @keyframes slideIn {
             from {
-                margin-top: -20px;
+                margin-top: -10px;
                 opacity: 0;
             }
 
@@ -76,14 +76,15 @@
         }
 
         .freestyler {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             position: relative;
         }
 
         .freestyler img {
-            max-width: 100%;
+            max-width: 100px;
+            width: 100%;
             height: auto;
-            max-height: 150px;
+            max-height: 120px;
             border-radius: 50%;
             transition: transform 0.3s ease-in-out;
         }
@@ -93,8 +94,8 @@
         }
 
         .freestyler h2 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
+            font-size: 1em;
+            margin-bottom: 5px;
         }
 
         .votar-btn {
@@ -110,7 +111,7 @@
             position: relative;
             overflow: hidden;
             z-index: 1;
-            margin-top: 20px;
+            margin-top: 10px;
         }
 
         .votar-btn:hover {
@@ -139,7 +140,7 @@
 
     <div class="container">
         <div class="freestyler">
-no            <img src="letra.jpg" alt="Letra">
+            <img src="letra.jpg" alt="Letra">
             <h2>Letra</h2>
             <button onclick="votar('Letra')" class="votar-btn">Votar</button>
         </div>
