@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agradecimiento por Votar</title>
+    <style>
+        /* Estilos CSS ... */
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #FFD600, #000);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease-in-out;
+            max-width: 80%;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            color: #FFD600;
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                margin-top: -20px;
+                opacity: 0;
+            }
+
+            to {
+                margin-top: 0;
+                opacity: 1;
+            }
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .freestyle-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+    <!-- Agrega tu CSS aquí -->
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="freestyle Master series.png" alt="Freestyle Master Series" class="freestyle-image">
+        <h1>¡Gracias por tu voto!</h1>
+        <p>Esperamos que tu Freestyler favorito gane. ¡Gracias por participar!</p>
+    </div>
+
+</body>
+
+</html>
