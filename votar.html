@@ -168,18 +168,20 @@
             <button onclick="votar('Blon')" class="votar-btn">Votar</button>
         </div>
 
-        <button class="votar-btn" onclick="votar('Mejor Freestyler')">enviar mi votó a mi freestyler favorito</button>
+        <!-- Agrega más freestylers si es necesario -->
+
+        <button class="votar-btn" onclick="enviarVoto()">Enviar mi voto a mi freestyler favorito</button>
     </div>
 
     <script>
         function votar(freestyler) {
-           function enviarVoto() {
-    window.location.href = 'gracias_por_votar.html';
-           }
-            
             // Elimina la línea de alerta si no quieres mensajes
             // alert('Has votado por ' + freestyler);
-            // Agrega código adicionalñ
+            // Agrega código adicional si es necesario
+        }
+
+        function enviarVoto() {
+            window.location.href = 'gracias_por_votar.html';
         }
     </script>
 </body>
